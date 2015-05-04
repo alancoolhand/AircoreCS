@@ -36,8 +36,11 @@ Supply +12V to pin 3 (nominal is 13.5, max is 16), make sure you are on common g
 CS4192 does use SPI_MODE_0 (which is most common), but what it does in non standard way is that CS is normally LOW, and pulled HIGH to select the chip and transfer data. The sin, cos output will then happen when CS is pulled LOW.
 What this means is that you WILL run into trouble if you're using other SPI devices in the same application.Beware!
 
+#Acceleration table
+The logic behind the acceleration table is best explained here:
+http://guy.carpenter.id.au/gaugette/2012/01/26/simplified-acceleration-model/
 
-
+As i tested it the standard one which is provided in the code is quite slow for aircores. Play with it if you understand it. For my application it was more or less ok.
 
 
 
