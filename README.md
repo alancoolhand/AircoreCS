@@ -42,5 +42,8 @@ http://guy.carpenter.id.au/gaugette/2012/01/26/simplified-acceleration-model/
 
 As i tested it the standard one which is provided in the code is quite slow for aircores. Play with it if you understand it. For my application it was more or less ok.
 
+#Multiple Aircores
+I successully tested this library with 3 gauges at once. I did power the Arduino Uno with an external AC-DC adpater rated at 12V, 1A. More wouldn't be a problem, except that maybe the updating process gets slower. Remember that update() needs to be called as frequently as possible. In my application (flight sim gauges) I listen for values (targets) from serial port,then update the target. For each update via the serial port, update is called about 4 times.
+
 
 
