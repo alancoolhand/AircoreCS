@@ -3,7 +3,7 @@ Arduno Library to drive CS4192 aircore gauge driver IC via Arduino
 
 # Preface
 Much of this library is directly derived from Guy Carpenter's excellent SwitecX25 library (https://github.com/clearwater/SwitecX25).
-CS4192 is a now out of production aircore driver IC (Datasheet: http://www.onsemi.com/pub_link/Collateral/CS4192-D.PDF). It is commoly found in automotive dashboards in order to drive aircore motors. The communications is done via  SPI (see note below). CS4192 takes a 10bit digital value and converts it into sin+-,cos+- to drive
+CS4192 is a now out of production aircore driver IC (Datasheet: http://www.onsemi.com/pub_link/Collateral/CS4192-D.PDF). It is commoly found in automotive dashboards in order to drive aircore motors. The communications is done via  SPI (see note below). CS4192 takes a 10bit digital value and converts it into sin+-,cos+- to drive an aircore motor.
 
 # Arduino wiring
 Tested on a UNO, other boards might require relevand edits:<br>
